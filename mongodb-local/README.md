@@ -1,4 +1,4 @@
-# mongodb Cookbook
+# mongodb-local Cookbook
 
 TODO: Enter the cookbook description here.
 
@@ -20,14 +20,14 @@ e.g.
 
 ### Cookbooks
 
-- `toaster` - mongodb needs toaster to brown your bagel.
+- `toaster` - mongodb-local needs toaster to brown your bagel.
 
 ## Attributes
 
 TODO: List your cookbook attributes here.
 
 e.g.
-### mongodb::default
+### mongodb-local::default
 
 <table>
   <tr>
@@ -37,7 +37,7 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['mongodb']['bacon']</tt></td>
+    <td><tt>['mongodb-local']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -46,18 +46,18 @@ e.g.
 
 ## Usage
 
-### mongodb::default
+### mongodb-local::default
 
 TODO: Write usage instructions for each cookbook.
 
 e.g.
-Just include `mongodb` in your node's `run_list`:
+Just include `mongodb-local` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[mongodb]"
+    "recipe[mongodb-local]"
   ]
 }
 ```
