@@ -27,7 +27,7 @@ execute "aws-cli install" do
 	        command "apt-get install awscli -y"
 end
 
- Chef::Log.info("info on  #{node} ")
+ Chef::Log.info("info on  #{node['opsworks']} ")
   
 #host = node["opsworks"]["instance"]["hostname"]
 #domain = node['hosted-domain']
