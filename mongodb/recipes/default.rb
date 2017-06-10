@@ -11,7 +11,7 @@ execute 'mongodb_addkey' do
 end
 
 execute 'mongodb_addrepo' do
-	command 'http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse'
+	command 'deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse'
 end
 
 execute "mongo apt-get update" do
