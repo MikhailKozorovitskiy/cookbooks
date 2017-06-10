@@ -11,14 +11,19 @@ execute "aws-cli python dependencies" do
 end
 
 execute "aws-cli install pip" do
-	        command "pip install --upgrade pip"
+	command "apt install pip"
+end
+
+
+execute "aws-cli update pip" do
+	command "pip install --upgrade pip"
 end
 
 execute "aws-cli dependencies" do
-	        command "pip install --upgrade virtualenv"
+	command "pip install --upgrade virtualenv"
 end
 
 execute "aws-cli install" do
-	        command "pip install --upgrade --user awscli"
+	command "pip install --upgrade --user awscli"
 end
 
