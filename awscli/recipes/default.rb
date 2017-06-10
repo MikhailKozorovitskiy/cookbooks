@@ -31,9 +31,9 @@ host = node["opsworks"]["instance"]["hostname"]
 domain = node['hosted-domain']
 ip = node["opsworks"]["instance"]["ip"]
 template '/home/ubuntu/aws-dns.json' do
-	   variables('host': host,
+	   variables({'host': host,
 		     'domain': domain,
-	   	     'ip': ip)
+	   	     'ip': ip})
 	  source 'aws-dns.erb'
 	  owner 'root'
 	  group 'root'
