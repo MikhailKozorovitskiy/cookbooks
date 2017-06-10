@@ -19,10 +19,6 @@ execute "aws-cli update pip" do
 	command "pip install --upgrade pip"
 end
 
-execute "aws-cli dependencies" do
-	command "pip install --upgrade virtualenv"
-end
-
 execute "aws-cli install" do
 	command "pip install --upgrade --user awscli"
 end
