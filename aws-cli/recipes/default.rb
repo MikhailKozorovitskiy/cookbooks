@@ -11,7 +11,7 @@ execute "aws-cli python dependencies" do
 end
 
 execute "aws-cli install pip" do
-	command "apt install pip"
+	command "apt-get install python-pip -y"
 end
 
 
