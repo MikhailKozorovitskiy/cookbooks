@@ -6,7 +6,6 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-include_recipe "mysql"
 
 mysql_service 'mysql-local' do
 	port '3306'
