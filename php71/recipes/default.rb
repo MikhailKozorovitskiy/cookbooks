@@ -38,4 +38,7 @@ end
 package 'php7.1-mcrypt' do
 	          action :install
 end
+package 'php7.1-fpm' do
+	                  action :install
+end
 

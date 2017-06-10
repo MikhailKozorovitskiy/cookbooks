@@ -39,4 +39,8 @@ package 'php5.6-mcrypt' do
 	  action :install
 end
 
+package 'php5.6-fpm' do
+	  action :install
+end
+
 
