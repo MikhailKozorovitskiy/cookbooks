@@ -1,6 +1,6 @@
 name             'php5.6'
-maintainer       'YOUR_COMPANY_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'mikhail kozorovitskiy'
+maintainer_email 'mikhail@thecrazyrussian.com'
 license          'All rights reserved'
 description      'Installs/Configures php5.6'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
