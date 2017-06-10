@@ -4,12 +4,12 @@
         {
 	      "Action": "CREATE",
 	            "ResourceRecordSet": {
-		    "Name": "<%=host %>.<%=domain %>",
+		    "Name": "<%= @host %>.<%= @domain %>",
 			            "Type": "CNAME",
 				            "TTL": 600,
 					            "ResourceRecords": [
 						              {
-							      "Value": "<%=ip %>"
+							      "Value": "<%= @ip %>"
 									            }
 										            ]
 											          }

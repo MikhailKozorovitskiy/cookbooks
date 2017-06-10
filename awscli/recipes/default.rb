@@ -27,10 +27,13 @@ execute "aws-cli install" do
 	        command "apt-get install awscli -y"
 end
 
+host = node["opsworks"]["instance"]["hostname"]
+domain = node['hosted-domain']
+ip = node["opsworks"]["instance"]["ip"]
 template '/home/ubuntu/aws-dns.json' do
-	   variables('host': node["opsworks"]["instance"]["hostname"],
-		     'domain': node['hosted-domain'],
-	   	     'ip': node["opsworks"]["instance"]["ip"])
+	   variables('host': host,
+		     'domain': domain,
+	   	     'ip': ip)
 	  source 'aws-dns.erb'
 	  owner 'root'
 	  group 'root'
