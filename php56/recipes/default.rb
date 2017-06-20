@@ -39,8 +39,11 @@ package 'php5.6-mcrypt' do
 	  action :install
 end
 
-package 'php5.6-fpm' do
+package 'php5.6-json' do
 	  action :install
 end
 
+package 'php5.6-mysql' do
+	  action :install
+end
 

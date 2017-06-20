@@ -41,4 +41,7 @@ end
 package 'php7.1-fpm' do
 	                  action :install
 end
+package 'php7.1-json' do
+	          action :install
+end
 
