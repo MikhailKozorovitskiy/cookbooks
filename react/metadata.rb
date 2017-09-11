@@ -1,7 +1,7 @@
-name             'mysql'
+name             'react'
 maintainer       'Mikhail Kozorovitskiy'
 maintainer_email 'mikhail@thecrazyrussian.com'
 license          'All rights reserved'
-description      'Installs/Configures mysql'
-long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+description      'Installs/Configures React'
 version          '0.1.0'
+depends		 'nginx'
