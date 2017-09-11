@@ -1,19 +1,18 @@
 {
   "Comment": "adding subdomain for new server",
-    "Changes": [
-        {
-	      "Action": "CREATE",
-	            "ResourceRecordSet": {
-		    "Name": "<%= @host %>.<%= @domain %>",
-			            "Type": "CNAME",
-				            "TTL": 600,
-					            "ResourceRecords": [
-						              {
-							      "Value": "<%= @ip %>"
-									            }
-										            ]
-											          }
-												      }
-												        ]
-													}
-
+  "Changes": [
+  {
+    "Action": "CREATE",
+    "ResourceRecordSet": {
+	    "Name": "<%= @host %>.<%= @domain %>",
+       "Type": "CNAME",
+       "TTL": 600,
+        "ResourceRecords": [
+          {
+			      "Value": "<%= @ip %>"
+          }
+        ]
+      }
+    }
+  ]
+}
