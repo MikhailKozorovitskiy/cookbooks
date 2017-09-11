@@ -1,0 +1,6 @@
+name             'codedeploy'
+maintainer       'Mikhail Kozorovitskiy'
+maintainer_email 'mikhail@thecrazyrussian.com'
+license          'All rights reserved'
+description      'Installs AWS CodeDeploy'
+depends		 'awscli'
