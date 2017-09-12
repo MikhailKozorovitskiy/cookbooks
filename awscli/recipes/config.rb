@@ -3,6 +3,8 @@ instance = search("aws_opsworks_instance", "self:true").first
 host = instance["hostname"]
 domain = node['hosted-domain']
 ip = instance["public_ip"]
+hostzone = node['hosted-zone-id']
+
 template '/home/ubuntu/aws-dns.json' do
 	   variables({'host': host,
 		     'domain': domain,
@@ -12,6 +14,6 @@ template '/home/ubuntu/aws-dns.json' do
 	  group 'root'
 	  mode '0755'
 end
-#execute "aws-cli install" do
-#	command "aws route53 change-resource-record-sets --hosted-zone-id {node['hosted-zone-id']} --change-batch file:///home/ubuntu/aws-dns.json"
-#end
+execute "awscli install" do
+	command "aws route53 change-resource-record-sets --hosted-zone-id {hostzone} --change-batch file:///home/ubuntu/aws-dns.json"
+end
