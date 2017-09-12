@@ -10,18 +10,25 @@ execute "apt-get monit" do
 	  command "apt-get install monit"
 end
 
+execute "apt-get apache2-utils" do
+	  command "apt-get install apache2-utils"
+end
+
+
+
+
 template '/etc/monit/monitrc' do
 	  source 'monitrc.erb'
 	  owner 'root'
 	  group 'root'
-	  mode '0755'
+	  mode '0700'
 end
 
 template '/etc/nginx/sites-enabled/default' do
 	  source 'nginx.erb'
 	  owner 'root'
 	  group 'root'
-	  mode '0755'
+	  mode '0700'
 end
 
 service "monit" do
