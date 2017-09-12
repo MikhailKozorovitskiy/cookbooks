@@ -1,8 +1,8 @@
-Chef::Log.info("info on  #{node['opsworks']} ")
+instance = search("aws_opsworks_instance", "self:true").first
 
-host = node["opsworks"]["instance"]["hostname"]
+host = instance["hostname"]
 domain = node['hosted-domain']
-ip = node["opsworks"]["instance"]["ip"]
+ip = instance["public_ip"]
 template '/home/ubuntu/aws-dns.json' do
 	   variables({'host': host,
 		     'domain': domain,
