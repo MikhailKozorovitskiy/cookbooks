@@ -14,6 +14,6 @@ template '/home/ubuntu/aws-dns.json' do
 	  group 'root'
 	  mode '0755'
 end
-execute "awscli install" do
+execute "awscli setup dns" do
 	command "aws route53 change-resource-record-sets --hosted-zone-id #{hostzone} --change-batch file:///home/ubuntu/aws-dns.json"
 end
