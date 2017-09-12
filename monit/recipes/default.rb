@@ -10,13 +10,6 @@ execute "apt-get monit" do
 	  command "apt-get install monit"
 end
 
-execute "apt-get apache2-utils" do
-	  command "apt-get install apache2-utils"
-end
-
-
-
-
 template '/etc/monit/monitrc' do
 	  source 'monitrc.erb'
 	  owner 'root'
