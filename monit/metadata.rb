@@ -1,4 +1,4 @@
-name             'apt'
+name             'monit'
 maintainer       'Mikhail Kozorovitskiy'
 maintainer_email 'mikhail@thecrazyrussian.com'
 license          'All rights reserved'
