@@ -18,7 +18,7 @@ template '/etc/monit/monitrc' do
 end
 
 template '/etc/nginx/sites-enabled/default' do
-	  source 'default.erb'
+	  source 'nginx.erb'
 	  owner 'root'
 	  group 'root'
 	  mode '0755'
