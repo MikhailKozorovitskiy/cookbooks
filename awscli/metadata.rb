@@ -1,4 +1,4 @@
-name             'aws-cli'
+name             'awscli'
 maintainer       'Mikhail Kozorovitskiy'
 maintainer_email 'mikhail@thecrazyrussian.com'
 license          'All rights reserved'

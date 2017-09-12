@@ -26,9 +26,3 @@ end
 execute "aws-cli install" do
 	command "apt-get install awscli -y"
 end
-
-
-
-#execute "aws-cli install" do
-#	command "aws route53 change-resource-record-sets --hosted-zone-id {node['hosted-zone-id']} --change-batch file:///home/ubuntu/aws-dns.json"
-#end
