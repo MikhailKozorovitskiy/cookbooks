@@ -6,6 +6,8 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+include_recipe "nginx"
+
 execute "apt-get monit" do
 	  command "apt-get install monit"
 end
