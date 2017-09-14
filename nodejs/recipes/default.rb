@@ -15,3 +15,15 @@ package 'nodejs' do
 package 'npm' do
   action :install
   end
+
+execute "npm brunch install" do
+  command "npm install -g brunch"
+end
+
+execute "npm bower install" do
+  command "npm install -g bower"
+end
+
+execute "create node symlink" do
+  command "ln -s /usr/bin/nodejs /usr/bin/node"
+end
