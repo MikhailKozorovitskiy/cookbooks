@@ -39,9 +39,26 @@ package 'php7.1-mcrypt' do
 	          action :install
 end
 package 'php7.1-fpm' do
-	                  action :install
+	           action :install
 end
 package 'php7.1-json' do
 	          action :install
 end
-
+package 'php7.1-imagick' do
+	          action :install
+end
+package 'php7.1-bcmath' do
+	          action :install
+end
+package 'php7.1-bz2' do
+	          action :install
+end
+package 'php7.1-dba' do
+	          action :install
+end
+package 'php7.1-soap' do
+	          action :install
+end
+package 'php7.1-zip' do
+	          action :install
+end
