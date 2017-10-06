@@ -4,8 +4,8 @@ password = node['password']
 
 template "/etc/php/7.1/fpm/pool.d/#{domain}.conf" do 
   source 'pool.erb'
-  variables({'user': user,
-             'domain': domain})
+  variables({user: user,
+             domain: domain})
   owner 'root'
   group 'root'
   mode '0644'
@@ -13,8 +13,8 @@ end
 
 template "/etc/nginx/sites-enabled/#{domain}" do
   source 'nginx.erb'
-  variables({'user': user,
-             'domain': domain})
+  variables({user: user,
+             domain: domain})
   owner 'root'
   group 'root'
   mode '0644'
