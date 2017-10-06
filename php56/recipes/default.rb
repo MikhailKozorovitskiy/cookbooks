@@ -46,4 +46,20 @@ end
 package 'php5.6-mysql' do
 	  action :install
 end
-
+package 'php5.6-imagick' do
+	          action :install
+end
+package 'php5.6-bcmath' do
+	          action :install
+end
+package 'php5.6-bz2' do
+	          action :install
+end
+package 'php5.6-dba' do
+	          action :install
+end
+package 'php5.6-soap' do
+	          action :install
+end
+package 'php5.6-zip' do
+	          action :install

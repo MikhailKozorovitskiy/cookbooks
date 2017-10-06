@@ -48,3 +48,20 @@ package 'php7.0-json' do
 	          action :install
 end
 
+package 'php7.0-imagick' do
+	          action :install
+end
+package 'php7.0-bcmath' do
+	          action :install
+end
+package 'php7.0-bz2' do
+	          action :install
+end
+package 'php7.0-dba' do
+	          action :install
+end
+package 'php7.0-soap' do
+	          action :install
+end
+package 'php7.0-zip' do
+	          action :install
