@@ -2,6 +2,8 @@ user = node['user']
 domain = node['domain']
 password = node['password']
 
+Chef::Log.debug(node)
+
 template "/etc/php/7.1/fpm/pool.d/#{domain}.conf" do 
   source 'pool.erb'
   variables({user: user,
