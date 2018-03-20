@@ -21,6 +21,7 @@ execute "npm brunch install" do
   command "sudo apt-get install -y nodejs"
   command "curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -"
   command 'echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list'
+  command "sudo apt-get update && sudo apt-get install yarn"
 end
 
 execute "create node symlink" do
